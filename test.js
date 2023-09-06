@@ -18,6 +18,7 @@ export function test (element) {
         
         if(msg !== '') {
             li.textContent = msg
+            li.classList.add('msg')
             msglist.appendChild(li)
             warning.textContent = ''
             element.querySelector('#msg').value = ''
